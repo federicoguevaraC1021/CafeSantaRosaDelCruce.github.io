@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Cafe Santa Rosa Del Cruce</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Contacto para Clientes</span>
+							<span class="number">310 2142103 - 3153660960</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="/">Café santa rosa del cruce</a></h1>
+					</div>
+                    <div class="container-user">
+						<i class="fa-solid fa-user"></i>
+						<i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+							<span class="text">Carrito</span>
+							<span class="number">(0)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#index.html">Inicio</a></li>
+						<li><a href="#sobreNosotros">Sobre Nosotros</a></li>
+						<li><a href="#tiposCafe">Tipos De Cafe</a></li>
+						<li><a href="#Productos">Productos</a></li>
+						<li><a href="#info">Informacion</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<section class="banner">
+			<div class="content-banner">
+                <div class="sobreNosotros">
+                <div id="sobreNosotros">
+                <h2>Sobre Nosotros</h2>
+                </div>
+                <p>Somos una microempresa familiar de emprendimiento cuyo objetivo es ofrecer un café de alta calidad, cultivado en la pequeña
+                 propiedad denominada "Santa Rosa Del Cruce", municipio de Jerusalén, Cundinamarca.
+                 Los Procesos de trilla, tostión y empaquetado se realizan cumpliendo las más altas normas de calidad en la empresa Tritocafé.
+                 Contamos con registro invima N° ______________ radicado _________________.</p>
+                </div>
+			</div>
+		</section>
+
+		<main class="main-content">
+			<section class="container container-features">
+				<div class="card-feature">
+					<i class="fa-solid fa-plane-up"></i>
+					<div class="feature-content">
+						<span>Envío gratuito a todo Bogota</span>
+						<p>En compras superiores a 2 Libras</p>
+					</div>
+				</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-headset"></i>
+					<div class="feature-content">
+						<span>Servicio al cliente De 7AM a 5PM</span>
+						<p>LLámenos al 3153660960 o 3102142103</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="container top-categories">
+				<div id="tiposCafe">
+					<h1 class="heading-1">Tipos de Café</h1>
+				</div>
+				<div class="container-categories">
+					<div class="card-category category-expreso">
+						<p>Café Molido</p>
+						<span class="open-dialog" data-category="expreso" data-image="img/expreso-category.jpg" data-text="Descripción del Café Molido...">Ver más</span>
+					</div>
+					<div class="card-category category-capuchino">
+						<p>Café en Grano</p>
+						<span class="open-dialog" data-category="capuchino" data-image="img/capuchino-category.jpg" data-text="Descripción del Café en Grano...">Ver más</span>
+					</div>
+				</div>
+		
+				<!-- Dialog for details -->
+				<dialog id="detailDialog">
+					<div class="dialog-content">
+						<img id="dialogImage" src="" alt="Imagen de café">
+						<p id="dialogText"></p>
+					</div>
+					<button id="closeDialog">Cerrar</button>
+				</dialog>
+			</section>
+
+			<section class="container top-products">
+                <div class="Productos" id="Productos">
+				<h1 class="heading-1">Productos</h1>
+                </div>
+				<div class="container-options">
+					<span class="active">Destacados</span>
+					<span>Más recientes</span>
+					<span>Mejores Vendidos</span>
+				</div>
+
+				<div class="container-products">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafepolvo.png" alt="Cafe" />
+							<span class="discount">-12%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Cafe Molido</h3>
+							<span class="add-cart" onclick="redirectToWhatsApp()">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">22.000COP <span>25.000COP</span></p>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="./img/cafegrano.png"
+								alt="Cafe.jpg"
+							/>
+							<span class="discount">-12%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Café en Grano</h3>
+							<span class="add-cart" onclick="redirectToWhatsApp1()">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">22.000COP <span>$25.000COP</span></p>
+						</div>
+					</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container container-footer" id="info">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: Carrera 31 # 4- 52 Bogotá Colombia
+							</li>
+							<li>Teléfono: 3153660960</li>
+                            <li>Teléfono: 3102142103</li>
+							<li>EmaiL: santarosadelcruce@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<a href="https://www.facebook.com/profile.php?id=61560455560559" target="_blank" class="facebook">
+								<i class="fa-brands fa-facebook-f"></i></a>
+							</span>
+							<span class="youtube">
+								<a href="https://www.youtube.com/@CaféSantaRosaDelCruce" target="_blank" class="youtube">
+								<i class="fa-brands fa-youtube"></i></a>
+							</span>
+							<span class="instagram">
+								<a href="https://www.instagram.com/cafe_santa_rosa_del_cruce/" target="_blank" class="instagram">
+								<i class="fa-brands fa-instagram"></i></a>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#information">Contactános</a></li>
+						</ul>
+					</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por Federico G &copy; 2024
+					</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
